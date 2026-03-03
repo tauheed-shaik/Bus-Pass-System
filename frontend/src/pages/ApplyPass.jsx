@@ -78,7 +78,7 @@ const ApplyPass = () => {
     return (
         <div className="max-w-4xl mx-auto space-y-8">
             <header>
-                <h1 className="text-3xl font-bold text-slate-900">Apply for Bus Pass</h1>
+                <h1 className="text-3xl font-bold text-slate-900">Apply for Transit Pass</h1>
                 <p className="text-slate-500">Fill in the details and upload documents for verification.</p>
             </header>
 

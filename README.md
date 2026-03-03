@@ -1,6 +1,6 @@
-# College Bus Pass System
+# TransitPass Pro
 
-A comprehensive MERN stack application for managing college bus pass applications, approvals, renewals, and NFC-based verification.
+A comprehensive MERN stack application for managing transit pass applications, approvals, renewals, and NFC-based verification.
 
 ## 🚀 Features
 

@@ -32,7 +32,7 @@ const VerifyNFC = () => {
                     <Scan className="w-10 h-10 text-primary-600" />
                 </div>
                 <h1 className="text-3xl font-bold text-slate-900">Pass Verification</h1>
-                <p className="text-slate-500 mt-2">Scan NFC Tag or enter Bus Pass ID manually</p>
+                <p className="text-slate-500 mt-2">Scan NFC Tag or enter Transit Pass ID manually</p>
             </header>
 
             <form onSubmit={handleVerify} className="relative group">

@@ -64,8 +64,8 @@ const StudentDashboard = () => {
             const h = imgProps.height * ratio;
 
             pdf.addImage(imgData, 'PNG', (pdfWidth - w) / 2, (pdfHeight - h) / 2, w, h);
-            pdf.save(`BusPass_${user.name}.pdf`);
-            toast.success('Bus pass downloaded successfully');
+            pdf.save(`TransitPass_${user.name}.pdf`);
+            toast.success('Transit pass downloaded successfully');
         } catch (err) {
             console.error('PDF Export Error:', err);
             toast.error('Failed to generate PDF. Please try again.');
@@ -99,7 +99,7 @@ const StudentDashboard = () => {
                     </div>
                     <h3 className="text-xl font-semibold text-slate-800">No Active Pass</h3>
                     <p className="text-slate-500 max-w-md mx-auto mt-2">
-                        You haven't applied for a bus pass yet. Start your application today to enjoy easy campus transit.
+                        You haven't applied for a transit pass yet. Start your application today to enjoy easy campus transit.
                     </p>
                     <button
                         className="mt-6 text-primary-600 font-bold hover:underline"

@@ -39,7 +39,7 @@ const Login = () => {
                         <LogIn className="w-8 h-8 text-primary-600" />
                     </div>
                     <h2 className="text-3xl font-bold text-slate-800 tracking-tight">Welcome Back</h2>
-                    <p className="text-slate-500 mt-2">Sign in to your bus pass portal</p>
+                    <p className="text-slate-500 mt-2">Sign in to your transit pass portal</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-6">

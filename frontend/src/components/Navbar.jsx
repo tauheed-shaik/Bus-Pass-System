@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Bus, LogOut, User, LayoutDashboard, Map, Search } from 'lucide-react';
+import { CreditCard, LogOut, User, LayoutDashboard, Map, Search } from 'lucide-react';
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
@@ -17,9 +17,9 @@ const Navbar = () => {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2">
                     <div className="p-2 bg-primary-600 rounded-lg">
-                        <Bus className="w-6 h-6 text-white" />
+                        <CreditCard className="w-6 h-6 text-white" />
                     </div>
-                    <span className="text-xl font-bold text-slate-800 hidden sm:block">Bus Pass Automator</span>
+                    <span className="text-xl font-bold text-slate-800 hidden sm:block">TransitPass Pro</span>
                 </Link>
 
                 {user ? (
@@ -36,7 +36,7 @@ const Navbar = () => {
                             </Link>
                         ) : (
                             <Link to="/apply" className="flex items-center gap-1 text-slate-600 hover:text-primary-600 font-medium transition-colors">
-                                <Bus className="w-5 h-5" />
+                                <CreditCard className="w-5 h-5" />
                                 <span className="hidden md:block">Apply Pass</span>
                             </Link>
                         )}

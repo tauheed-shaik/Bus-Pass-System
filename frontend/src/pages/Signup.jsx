@@ -48,7 +48,7 @@ const Signup = () => {
                         <UserPlus className="w-8 h-8 text-primary-600" />
                     </div>
                     <h2 className="text-3xl font-bold text-slate-800 tracking-tight">Student Registration</h2>
-                    <p className="text-slate-500 mt-2">Create your account to apply for a college bus pass</p>
+                    <p className="text-slate-500 mt-2">Create your account to apply for a transit pass</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
