@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  /* Force HEX values for ALL colors to avoid html2canvas oklch errors */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-400: #4ade80;
+  --color-green-600: #16a34a;
+
+  --color-amber-400: #fbbf24;
+  --color-amber-600: #d97706;
+
+  --color-red-600: #dc2626;
+
+  --color-indigo-600: #4f46e5;
+  --color-indigo-900: #312e81;
+}
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  /* Disable oklch at root if possible for better extract tool compatibility */
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f8fafc;
+  /* Manual hex instead of bg-slate-50 */
+  color: #0f172a;
+  /* Manual hex instead of text-slate-900 */
+}
+
+/* Base styles without oklch-prone utilities for capture-sensitive elements */
+.glass-morphism {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+  background-color: #0284c7;
+  color: white;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #0369a1;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: all 0.2s;
+  color: #334155;
+}
+
+.input-field:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+
+.input-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.875rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b;
+  pointer-events: none;
+  z-index: 10;
+}
