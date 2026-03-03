@@ -19,7 +19,7 @@ const Navbar = () => {
                     <div className="p-2 bg-primary-600 rounded-lg">
                         <Bus className="w-6 h-6 text-white" />
                     </div>
-                    <span className="text-xl font-bold text-slate-800 hidden sm:block">CampusTransit</span>
+                    <span className="text-xl font-bold text-slate-800 hidden sm:block">Bus Pass Automator</span>
                 </Link>
 
                 {user ? (
